@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"time"
 
 	"github.com/sbstjn/hanu"
 	"github.com/sbstjn/hanu-example/cmd"
@@ -35,6 +36,7 @@ func startBot() {
 	}
 
 	cmd.Version = Version
+	cmd.Start = time.Now()
 	cmdList := cmd.List()
 	for i := 0; i < len(cmdList); i++ {
 		bot.Register(cmdList[i])
