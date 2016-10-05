@@ -1,1 +1,1 @@
-web: hanu-example
+worker: hanu-example

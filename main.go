@@ -3,10 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
-	"os"
 
-	"github.com/gin-gonic/gin"
 	"github.com/sbstjn/hanu"
 	"github.com/sbstjn/hanu-example/cmd"
 	"github.com/spf13/viper"
@@ -27,24 +24,7 @@ func init() {
 
 	SlackToken = viper.GetString("HANU_EXAMPLE_SLACK_TOKEN")
 
-	port = os.Getenv("PORT")
-
-	fmt.Printf("Running HTTP on port %s\n", port)
 	fmt.Printf("Using Token %s for Slack API\n", SlackToken)
-}
-
-var (
-	port string
-)
-
-func startWeb() {
-	r := gin.Default()
-
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "OK.")
-	})
-
-	r.Run(":" + port)
 }
 
 func startBot() {
@@ -64,6 +44,5 @@ func startBot() {
 }
 
 func main() {
-	startWeb()
 	startBot()
 }
