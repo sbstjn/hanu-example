@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -25,6 +26,11 @@ func init() {
 	viper.ReadInConfig()
 
 	SlackToken = viper.GetString("HANU_EXAMPLE_SLACK_TOKEN")
+
+	port = os.Getenv("PORT")
+
+	fmt.Printf("Running HTTP on port %s\n", port)
+	fmt.Printf("Using Token %s for Slack API\n", SlackToken)
 }
 
 var (
@@ -55,10 +61,6 @@ func startBot() {
 	}
 
 	bot.Listen()
-}
-
-func init() {
-	port = os.Getenv("PORT")
 }
 
 func main() {
