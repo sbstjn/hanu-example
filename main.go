@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"time"
 
@@ -24,11 +23,9 @@ func init() {
 	viper.ReadInConfig()
 
 	SlackToken = viper.GetString("HANU_EXAMPLE_SLACK_TOKEN")
-
-	fmt.Printf("Using Token %s for Slack API\n", SlackToken)
 }
 
-func startBot() {
+func main() {
 	bot, err := hanu.New(SlackToken)
 
 	if err != nil {
@@ -43,8 +40,4 @@ func startBot() {
 	}
 
 	bot.Listen()
-}
-
-func main() {
-	startBot()
 }
