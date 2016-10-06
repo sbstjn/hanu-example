@@ -77,11 +77,11 @@
 		},
 		{
 			"ImportPath": "github.com/sbstjn/hanu",
-			"Rev": "aa6b56b33870d7ec29d9342f0b9a42ac2f64d63a"
+			"Rev": "78765aa98192222208fda2d8efd3e46b66edfc80"
 		},
 		{
 			"ImportPath": "github.com/sbstjn/hanu/bot",
-			"Rev": "aa6b56b33870d7ec29d9342f0b9a42ac2f64d63a"
+			"Rev": "78765aa98192222208fda2d8efd3e46b66edfc80"
 		},
 		{
 			"ImportPath": "github.com/sbstjn/platzhalter",
