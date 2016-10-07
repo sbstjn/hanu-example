@@ -6,7 +6,7 @@ func init() {
 	Register(
 		"hi",
 		"Reply with a lovely welcome greeting",
-		func(conv *bot.Conversation) {
+		func(conv bot.Conversation) {
 			conv.Reply("Hi yourself!")
 		},
 	)

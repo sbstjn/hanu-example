@@ -10,7 +10,7 @@ func init() {
 	Register(
 		"whisper <word>",
 		"Reply the passed word in lowercase letters",
-		func(conv *bot.Conversation) {
+		func(conv bot.Conversation) {
 			conv.Reply(strings.ToLower(conv.Param("word")))
 		},
 	)
