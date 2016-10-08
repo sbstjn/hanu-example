@@ -77,11 +77,19 @@
 		},
 		{
 			"ImportPath": "github.com/sbstjn/hanu",
-			"Rev": "f1f1be8e93afdecdd4f81efb559488197f6696b3"
+			"Rev": "17c1c85c57239b09de3d7f00c7fe7f6f5ebb8669"
 		},
 		{
-			"ImportPath": "github.com/sbstjn/hanu/bot",
-			"Rev": "f1f1be8e93afdecdd4f81efb559488197f6696b3"
+			"ImportPath": "github.com/sbstjn/hanu/command",
+			"Rev": "17c1c85c57239b09de3d7f00c7fe7f6f5ebb8669"
+		},
+		{
+			"ImportPath": "github.com/sbstjn/hanu/conversation",
+			"Rev": "17c1c85c57239b09de3d7f00c7fe7f6f5ebb8669"
+		},
+		{
+			"ImportPath": "github.com/sbstjn/hanu/message",
+			"Rev": "17c1c85c57239b09de3d7f00c7fe7f6f5ebb8669"
 		},
 		{
 			"ImportPath": "github.com/sbstjn/platzhalter",

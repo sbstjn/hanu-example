@@ -3,11 +3,10 @@ package cmd
 import (
 	"time"
 
-	"github.com/sbstjn/hanu/bot"
-	"github.com/sbstjn/platzhalter"
+	"github.com/sbstjn/hanu/command"
 )
 
-var commandList []bot.Command
+var commandList []command.Interface
 
 // Version stores the chatbot version. Will be updated by `main.go`
 var Version string
@@ -16,15 +15,11 @@ var Version string
 var Start time.Time
 
 // Register adds a new command to commandList
-func Register(command string, description string, handler bot.CommandHandler) {
-	commandList = append(commandList, bot.Command{
-		Command:     platzhalter.NewCommand(command),
-		Description: description,
-		Handler:     handler,
-	})
+func Register(cmd string, description string, handler command.Handler) {
+	commandList = append(commandList, command.New(cmd, description, handler))
 }
 
 // List returns commandList
-func List() []bot.Command {
+func List() []command.Interface {
 	return commandList
 }
