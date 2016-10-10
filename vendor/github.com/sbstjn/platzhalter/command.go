@@ -66,6 +66,10 @@ func (c *Command) Param(request string, name string) string {
 	keys := c.Keys()
 	values, _ := c.Values(request)
 
+	if len(keys) != len(values) {
+		return ""
+	}
+
 	for i := 0; i < len(keys); i++ {
 		if keys[i] == name {
 			return values[i]
