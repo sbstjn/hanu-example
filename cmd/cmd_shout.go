@@ -11,7 +11,8 @@ func init() {
 		"shout <word>",
 		"Reply the password in uppercase letters",
 		func(conv conversation.Interface) {
-			conv.Reply(strings.ToUpper(conv.Param("word")))
+			str, _ := conv.String("word")
+			conv.Reply(strings.ToUpper(str))
 		},
 	)
 }

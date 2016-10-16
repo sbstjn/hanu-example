@@ -11,7 +11,8 @@ func init() {
 		"whisper <word>",
 		"Reply the passed word in lowercase letters",
 		func(conv conversation.Interface) {
-			conv.Reply(strings.ToLower(conv.Param("word")))
+			str, _ := conv.String("word")
+			conv.Reply(strings.ToLower(str))
 		},
 	)
 }
