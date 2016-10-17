@@ -77,23 +77,11 @@
 		},
 		{
 			"ImportPath": "github.com/sbstjn/allot",
-			"Rev": "766b863ade3d9c2677a1ca84b0f1987b67a01060"
+			"Rev": "55d4e9f6de6d0c9a940149ed3680a830e887398a"
 		},
 		{
 			"ImportPath": "github.com/sbstjn/hanu",
-			"Rev": "8b258018b156b8a65071eb9b086de924de5075ba"
-		},
-		{
-			"ImportPath": "github.com/sbstjn/hanu/command",
-			"Rev": "8b258018b156b8a65071eb9b086de924de5075ba"
-		},
-		{
-			"ImportPath": "github.com/sbstjn/hanu/conversation",
-			"Rev": "8b258018b156b8a65071eb9b086de924de5075ba"
-		},
-		{
-			"ImportPath": "github.com/sbstjn/hanu/message",
-			"Rev": "8b258018b156b8a65071eb9b086de924de5075ba"
+			"Rev": "5ef0a791af8dc13a0f70ee5c083aab8f33cf7fdb"
 		},
 		{
 			"ImportPath": "github.com/spf13/afero",
