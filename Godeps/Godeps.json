@@ -77,11 +77,11 @@
 		},
 		{
 			"ImportPath": "github.com/sbstjn/allot",
-			"Rev": "55d4e9f6de6d0c9a940149ed3680a830e887398a"
+			"Rev": "e0c4571e563ec1dea69abf3050066ca1cfcff8c1"
 		},
 		{
 			"ImportPath": "github.com/sbstjn/hanu",
-			"Rev": "5ef0a791af8dc13a0f70ee5c083aab8f33cf7fdb"
+			"Rev": "61059a5e54baae171c9bcd86add435287c2959f8"
 		},
 		{
 			"ImportPath": "github.com/spf13/afero",
